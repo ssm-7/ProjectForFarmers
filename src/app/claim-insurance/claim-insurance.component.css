@@ -47,8 +47,8 @@ body {
     text-align: left;
     font-size: 19px;
     color: rgb(255, 255, 255);
-    border: 2px solid black;
-    background-color: #55608f;
+    border: 2px solid white;
+    background-color: black;
 }
 
 td{
@@ -57,21 +57,22 @@ td{
   border: 2px solid black;
 }
 table{
-    margin-left: 100px ;
+    margin-left: 10px ;
+    max-height: 120px;
     align-items: center;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
     display: inline-block;
     font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria;
     
 }
 th {
   padding: 5px;
 }
 .approve {
-  margin-left: 500px;
+  margin-left: 400px;
   position: relative;
   background-color: #004a7f;
   -webkit-border-radius: 10px;
