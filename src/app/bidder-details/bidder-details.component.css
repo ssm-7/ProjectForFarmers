@@ -2,7 +2,7 @@ th{
     text-align: left;
     font-size: 19px;
     color: rgb(255, 255, 255);
-    background-color: #55608f;
+    background-color: black;
     border: 2px solid black;
     
 }
@@ -15,7 +15,7 @@ td{
 table{
     margin-left: 200px ;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid white;
     
     
     

@@ -1,7 +1,7 @@
 *{
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
 
@@ -10,7 +10,7 @@ body{
   height: 50em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.header
+/*.header
 {
   min-width: fit-content;
   min-height: 10vh;
@@ -19,7 +19,7 @@ body{
   right:0;
   width: 100vw;
   margin-bottom: 20px;
-}
+}*/
 a{
   color: black;
   text-decoration: none;
@@ -37,12 +37,16 @@ h4{
 .sideNav
 {
   position: absolute;
-  background: #ace973;
-  width:20vw;
+  background: rgb(171, 220, 237);
+  width:22vw;
   min-height: fit-content;
   display: flex;
   flex-direction: column;
   box-shadow:5px  darkgreen ;
+  margin-top: 30px;
+  border-radius: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
 }
 
 .sideNav li{
@@ -62,4 +66,31 @@ h4{
   width: 100vw;
   height: 100vh;
   position: left;
+}
+
+
+.topnav {
+  background-color: #3096fb;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  /*background-color: #ddd;*/
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fbfefd;
+  color: white;
 }
