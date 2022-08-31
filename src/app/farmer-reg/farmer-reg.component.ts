@@ -58,10 +58,10 @@ register()
   
   this.farmerService.register(this.farmer).subscribe(
     data => {
-      this.router.navigate(['/farmerlogin'])
+    
     if(data.status != 'SUCCESS') {
       alert("You've been registerd");
-      
+      this.router.navigate(['/farmerlogin'])
     }
     else {
       alert(data.status);
