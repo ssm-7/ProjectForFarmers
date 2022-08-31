@@ -42,7 +42,7 @@
           type="text"
           name="t1"
           [(ngModel)]="farmer.farmerFirstName"
-          required
+          required 
           minlength="3"
           #fname="ngModel"
         />
@@ -51,6 +51,8 @@
           class="alert"
         >
           <div *ngIf="fname.errors?.required"><br>First Name is Required</div>
+
+          <div *ngIf="fname.errors?.null"><br>should not be null</div>
 
           <div *ngIf="fname.errors?.minlength"><br>
             First Name must be atleast 3 characters
@@ -147,7 +149,7 @@
           #cno="ngModel"
         />
        <div *ngIf="cno.invalid && (cno.dirty || cno.touched)" class="alert">
-          <div *ngIf="cno.errors?.required"><br> Enter your number</div>
+          <div *ngIf="cno.errors?.required" ><br> Enter your number</div>
 
          <div *ngIf="cno.errors?.minlength || cno.errors?.maxlength"><br> 
             Number must be atleast 10 characters
@@ -203,7 +205,7 @@
         </div>
         <br /><br />
         <button class="btn" type="submit">Register</button><br /><br />
-        <a routerLink="/FarmerLogin">Already Registered? Login Here!!</a>
+        <a routerLink="/FarmerLogin" href="javascript:void(0)">Already Registered? Login Here!!</a>
       </div>
     </form>
   </div>

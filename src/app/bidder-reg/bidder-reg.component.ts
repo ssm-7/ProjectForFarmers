@@ -36,6 +36,40 @@ export class BidderRegComponent implements OnInit {
   }
 
   register() {
+    
+    if(this.bidder.bidderFirstName == null){
+      alert("Invalid FirstName");
+      return
+    }
+    if(this.bidder.bidderLastName == null){
+      alert("Invalid LastName");
+      return
+    }
+    if(this.bidder.email == null || !(this.bidder.email.match("@"))){
+      alert("Invalid email");
+      return
+    }
+    if(this.bidder.password == null || this.bidder.password.length < 6){
+      alert("Invalid Password");
+      return
+    }
+    if(this.bidder.contactNo == null || this.bidder.contactNo.length!=10){
+      alert("Invalid Contact No");
+      return
+    }
+    if(this.bidder.aadharNo == null || String(this.bidder.aadharNo).length!=12){
+      alert("Invalid Adhar-No");
+      return
+    }
+    if(this.bidder.traderLicenseNo == null){
+      alert("Invalid Trade Number");
+      return
+    }
+    if(this.bidder.balance == null){
+      alert("Invalid Balance");
+      return
+    }
+
     this.bidderService.register(this.bidder).subscribe(data => {
       alert(JSON.stringify(data));
       
